@@ -24,11 +24,6 @@ window.onload = function(){
         let min = document.getElementById('min').innerText = watch_min;
         //Секунды
         let sec = document.getElementById('sec').innerText = watch_sec;
-
-        //Дата
-        let day = document.getElementById('day').innerText = time.getDate();
-        let month = document.getElementById('month').innerText = time.getMonth();
-        let year = document.getElementById('year').innerText = time.getFullYear();
     }
     setInterval(setTime, 1000);
 }

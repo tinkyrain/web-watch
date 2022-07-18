@@ -3,46 +3,43 @@
 }
 
 body{
-  background: url('bg.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-color: black;
+
+  width: 100%;
+  height: 100vh;
+
+  display: flex;
+  align-items: center;
 }
 
 .watch{
-    top: 15%;
-    position: absolute;
-    width: 100%;
-    height: auto;
-    display: flex;
-    justify-content: space-around;
+  width: 100%;
+  height: auto;
+
+  display: flex;
+  justify-content: space-evenly;
 }
 
-.full-hour,
-.full-min,
-.full-second{
+.watch__time-table{
     width: 200px;
-    height: 400px;
-    display: flex;
-    justify-content: space-between;
-    padding-left: 10px;
+    height: auto;
+
+    margin: auto;
 }
 
-.hour,
-.min,
-.sec{
+.watch__time-table__time{
     color: white;
+
     font-family: 'Audiowide', cursive;
     font-size: 110px;
+
     width: 100px;
     height: 200px;
 }
 
-.date{
-    font-family: 'Audiowide', cursive;
-    display: flex;
-    justify-content: center;
-    font-size: 23px;
-    color: white;
-    left: 80%;
-    margin: 0 auto;
+/*ADAPTIVE*/
+@media (max-width: 810px) {
+  .watch{
+    flex-direction: column;
+  }
 }
