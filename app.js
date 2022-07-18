@@ -25,5 +25,6 @@ window.onload = function(){
         //Секунды
         let sec = document.getElementById('sec').innerText = watch_sec;
     }
+    setTime();
     setInterval(setTime, 1000);
 }
